@@ -175,7 +175,7 @@ const TransactionHistory = () => {
       <div className="flex justify-between items-center text-sm text-gray-600 mt-4">
         <div>Showing 4 of 24 transactions</div>
         <div className="flex items-center gap-2">
-          <button className="px-3 py-1 border rounded-md hover:bg-gray-100">
+          <button className="px-3 py-1 border rounded-md hover:bg-gray-100 ">
             Previous
           </button>
           <button className="px-3 py-1 rounded-md bg-blue-100 text-blue-700">

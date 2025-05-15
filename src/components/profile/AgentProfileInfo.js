@@ -1,16 +1,16 @@
 import { useState } from "react";
 import {
-  Check,
-  Clock,
-  BadgeCheck,
   Circle,
   UserCheck,
   FileCheck,
 } from "lucide-react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
+import { useNavigate } from "react-router-dom";
 
 export default function AgentProfileInfo() {
+    const navigate = useNavigate();
+  
   const [agent] = useState({
     name: "Michael Johnson",
     code: "AG-7824",
@@ -50,7 +50,7 @@ export default function AgentProfileInfo() {
                 </div>
               </div>
               <div className="flex gap-2">
-                <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
+                <button  onClick={() => navigate("/customer-profile-edit")} className="border px-4 py-2 rounded-md hover:bg-gray-100">
                   Edit Profile
                 </button>
                 <button className="border border-red-300 text-red-600 px-4 py-2 rounded-md hover:bg-red-50">

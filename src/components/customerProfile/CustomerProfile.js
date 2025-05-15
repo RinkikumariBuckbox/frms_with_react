@@ -11,8 +11,10 @@ import Sidebar from "../Sidebar";
 import CusProfileDashboard from "./CusProfileDashboard";
 import TransactionHistory from "./TransactionHistory";
 import ActiveRiskRules from "./ActiveRiskRules";
+import { useNavigate } from "react-router-dom";
 
 export default function CustomerProfile() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50 text-base-content">
       <Header />
@@ -72,7 +74,10 @@ export default function CustomerProfile() {
                   <button className="border border-blue-500 text-blue-600 text-sm px-3 py-1 rounded hover:bg-blue-50">
                     Export Profile
                   </button>
-                  <button className="bg-blue-600 text-white text-sm px-3 py-1 rounded hover:bg-blue-700 flex items-center gap-1">
+                  <button
+                    onClick={() => navigate("/customer-profile-edit")}
+                    className="bg-blue-600 text-white text-sm px-3 py-1 rounded hover:bg-blue-700 flex items-center gap-1"
+                  >
                     <Pencil size={14} /> Edit Profile
                   </button>
 

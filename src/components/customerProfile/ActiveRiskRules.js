@@ -1,6 +1,4 @@
-// ActiveRiskRules.jsx
 import React from "react";
-// import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 
 const rules = [
@@ -45,10 +43,8 @@ const ActiveRiskRules = () => {
     <div className="bg-white shadow rounded-lg p-4">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-semibold">Active Risk Rules</h2>
-        {/* <Button className="flex items-center gap-2">
-          <Plus className="h-4 w-4" /> Add Rule
-        </Button> */}
-        <button className="flex items-center gap-2">
+
+        <button className="flex items-center gap-2 bg-blue-600 rounded p-2 text-white">
           <Plus className="h-4 w-4" /> Add Rule
         </button>
       </div>

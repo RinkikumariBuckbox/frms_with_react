@@ -13,6 +13,7 @@ import FraudDashboard from "./components/fraudPrevention/FraudDashboard";
 import MerchantInfo from "./components/profile/MerchantInfo";
 import AgentOnboarding from "./components/agentProfile/AgentOnboarding";
 import AgentProfileInfo from "./components/profile/AgentProfileInfo";
+import CustomerProfileEdit from "./components/customerProfile/CustomerProfileEdit";
 
 const App = () => {
   return (
@@ -31,6 +32,10 @@ const App = () => {
         <Route path="/merchant-info" element={<MerchantInfo />} />
         <Route path="/agent-onboarding" element={<AgentOnboarding />} />
         <Route path="/agent-profile-info" element={<AgentProfileInfo />} />
+        <Route
+          path="/customer-profile-edit"
+          element={<CustomerProfileEdit />}
+        />
       </Routes>
     </Router>
   );
